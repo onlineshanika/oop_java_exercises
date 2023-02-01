@@ -2,18 +2,18 @@ package com.techreturners.cats;
 
 public interface Cat {
 
+    boolean isAsleep();
 
-    public boolean isAsleep();
+    void goToSleep();
 
-    public void goToSleep();
+    void wakeUp();
 
-    public void wakeUp();
+    String eat();
 
-    public String eat();
+    int getAverageHeight();
 
-    public int getAverageHeight();
+    String getSetting();
 
-    public String getSetting();
+    String run();
 
-    public String run();
 }

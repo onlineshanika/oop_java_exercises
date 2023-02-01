@@ -2,7 +2,10 @@ package com.techreturners.cats;
 
 public class CheetahCat extends AbstractCat {
 
-    public int averageHeight = 50;
+    public CheetahCat() {
+        averageHeight = 50;
+        setting = Setting.WILD;
+    }
 
     @Override
     public String eat() {
@@ -15,12 +18,7 @@ public class CheetahCat extends AbstractCat {
     }
 
     @Override
-    public String getSetting() {
-        return setting;
-    }
-
-    @Override
     public String run() {
-        return null;
+        return eat();
     }
 }

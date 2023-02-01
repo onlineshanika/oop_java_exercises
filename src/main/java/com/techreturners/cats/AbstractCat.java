@@ -1,11 +1,11 @@
 package com.techreturners.cats;
 
-public abstract class AbstractCat implements Cat{
+public abstract class AbstractCat implements Cat {
 
     public int averageHeight;
-    public boolean isAsleep ;
+    public Setting setting;
 
-    public String setting ;
+    public boolean isAsleep;
 
     @Override
     public void goToSleep() {
@@ -20,5 +20,11 @@ public abstract class AbstractCat implements Cat{
     @Override
     public boolean isAsleep() {
         return isAsleep;
+    }
+
+    @Override
+    public String getSetting() {
+        return setting.getSettingValue();
+
     }
 }

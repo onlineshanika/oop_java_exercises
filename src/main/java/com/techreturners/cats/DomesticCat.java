@@ -2,10 +2,10 @@ package com.techreturners.cats;
 
 public class DomesticCat extends AbstractCat {
 
-    public final int averageHeight =23;
-
-    public boolean isAsleep =false;
-    public String setting ="domestic";
+    public DomesticCat() {
+        averageHeight = 23;
+        setting = Setting.DOMESTIC;
+    }
 
     @Override
     public String eat() {
@@ -15,11 +15,6 @@ public class DomesticCat extends AbstractCat {
     @Override
     public int getAverageHeight() {
         return averageHeight;
-    }
-
-    @Override
-    public String getSetting() {
-        return setting;
     }
 
     @Override
